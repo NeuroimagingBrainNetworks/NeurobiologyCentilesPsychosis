@@ -1,6 +1,7 @@
 This repository contains code and data created in support of the project "Molecular and micro-architectural mapping of abnormal gray matter developmental trajectories in psychosis". All code was written in Matlab and R. Folders, files, and first steps are described below.
 
-Data
+**Data**
+
 The Data folder contains all the data required for running the analyses. Here are the files that need to be downloaded and stored in a specific location. The remaining files will be automatically generated:
 
 -	The code used to compute centiles (BrainCharts folder) is available at https://github.com/brainchart/Lifespan
