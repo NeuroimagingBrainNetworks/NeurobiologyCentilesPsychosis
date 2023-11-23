@@ -55,8 +55,11 @@ The Code folder contains all the code required for running the analyses and gene
 -	NCP_10_CCA_cent_var.m – it is not a script to be executed, but for setting parameters by default for NCP_9_parfor_groups_CCA.m script. Default parameters include (see https://mlnl.github.io/cca_pls_toolkit/cfg/ for detailed information):
 
 % Machine settings
+
  cfg.machine.name = 'cca';
+ 
  cfg.machine.metric = {'correl' 'trexvarx' 'trexvary'}; 
+ 
  cfg.machine.param.name = {'VARx', 'VARy'}; % explained variance by the PCA components
 o	cfg.machine.param.VARx = 0.6:0.1:0.9; % variance of data kept in the principal components during the SVD step of PCA-CCA  
 o	cfg.machine.param.VARy = 1;   
