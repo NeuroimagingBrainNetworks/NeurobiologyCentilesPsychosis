@@ -54,7 +54,7 @@ The Code folder contains all the code required for running the analyses and gene
  
 -	NCP_10_CCA_cent_var.m – it is not a script to be executed, but for setting parameters by default for NCP_9_parfor_groups_CCA.m script. Default parameters include (see https://mlnl.github.io/cca_pls_toolkit/cfg/ for detailed information):
 
-   %% Machine settings
+   % Machine settings
 
  cfg.machine.name = 'cca';
  
@@ -63,26 +63,38 @@ The Code folder contains all the code required for running the analyses and gene
  cfg.machine.param.name = {'VARx', 'VARy'}; % explained variance by the PCA components
 
  cfg.machine.param.VARx = 0.6:0.1:0.9; % variance of data kept in the principal components during the SVD step of PCA-CCA  
+ 
  cfg.machine.param.VARy = 1;   
+ 
  cfg.machine.svd.varx = 1; % variance of X kept during the SVD step of PCA-CCA 
+
  cfg.machine.svd.vary = 1; % variance of Y kept during the SVD step of PCA-CCA
+
  cfg.machine.alignw = 'wX';
 
-   	% Framework settings
+ % Framework settings
+
  cfg.frwork.name = 'permutation';     
+ 
  cfg.frwork.split.nout % number of outer splits/folds
-o	cfg.frwork.nlevel = 1;
+ 
+ cfg.frwork.nlevel = 1;
     
 % Deflation settings
-o	cfg.defl.name = 'generalized'; 
+
+cfg.defl.name = 'generalized'; 
     
 % Environment settings
-o	cfg.env.comp = 'local'; %  ['local', 'cluster']
-o	cfg.env.save.tableHeading = {'set' 'varx' 'correl' 'pval' 'npcax'};
+
+cfg.env.comp = 'local'; %  ['local', 'cluster']
+
+cfg.env.save.tableHeading = {'set' 'varx' 'correl' 'pval' 'npcax'};
     
 % Number of permutations
-o	cfg.stat.nperm = 1000;
-o	cfg.stat.nboot = 1000;
+
+cfg.stat.nperm = 1000;
+
+cfg.stat.nboot = 1000;
 
 -	NCP_11_run_CCA.m – it is not a script to be executed, but for setting parameters by default for NCP_9_parfor_groups_CCA.m script. Default parameters include (see https://mlnl.github.io/cca_pls_toolkit/res/ for detailed information):
 
