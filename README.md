@@ -61,15 +61,16 @@ The Code folder contains all the code required for running the analyses and gene
  cfg.machine.metric = {'correl' 'trexvarx' 'trexvary'}; 
  
  cfg.machine.param.name = {'VARx', 'VARy'}; % explained variance by the PCA components
-o	cfg.machine.param.VARx = 0.6:0.1:0.9; % variance of data kept in the principal components during the SVD step of PCA-CCA  
-o	cfg.machine.param.VARy = 1;   
-o	cfg.machine.svd.varx = 1; % variance of X kept during the SVD step of PCA-CCA 
-o	cfg.machine.svd.vary = 1; % variance of Y kept during the SVD step of PCA-CCA
-o	cfg.machine.alignw = 'wX';
+
+ cfg.machine.param.VARx = 0.6:0.1:0.9; % variance of data kept in the principal components during the SVD step of PCA-CCA  
+ cfg.machine.param.VARy = 1;   
+ cfg.machine.svd.varx = 1; % variance of X kept during the SVD step of PCA-CCA 
+ cfg.machine.svd.vary = 1; % variance of Y kept during the SVD step of PCA-CCA
+ cfg.machine.alignw = 'wX';
 
    	% Framework settings
-o	cfg.frwork.name = 'permutation';     
-o	cfg.frwork.split.nout % number of outer splits/folds
+ cfg.frwork.name = 'permutation';     
+ cfg.frwork.split.nout % number of outer splits/folds
 o	cfg.frwork.nlevel = 1;
     
 % Deflation settings
