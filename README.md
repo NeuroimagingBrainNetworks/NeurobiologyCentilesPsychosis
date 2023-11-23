@@ -10,7 +10,8 @@ The Data folder contains all the data required for running the analyses. Here ar
 
 -	The code used for the PCA-CCA analyses (cca_pls_toolkit_dev-grcca folder) is available at https://github.com/anaston/cca_pls_toolkit
 
-First steps
+**First steps**
+
 
 1.	Download Code folder, which contains the scripts and functions used for the analyses.
 
@@ -29,7 +30,8 @@ First steps
 4.	Please store all_microsc_DesikanKilliany68.csv file and cca_pls_toolkit_dev-grcca folder in PCA_CCA folder.
 
 
-Code
+**Code**
+
 The Code folder contains all the code required for running the analyses and generate the figures. All scripts are designed to be sequentially executed. Don't forget to change the location variable regularly. 
 
 -	NCP_1_means_PARC_aparc_volume.R – calculates the average of the different brain volume regions between both hemispheres, left and right. It takes a .csv file with volume data from both hemispheres as input, and returns a mean_volumes.csv file.
@@ -102,7 +104,8 @@ o	res.behav.weight.errorbar.side = 'one';
 -	NCP_17_figures_correlation.m – generates the figures corresponding to the (1) neurobiological similarity matrix, (2) co-vulnerability to psychosis matrix, and (3) their respective correlation.
 
 
-Function calls
+**Function calls**
+
 This section contains the functions that are essential for running the scripts but must not be executed.
 
 -	computeCohen_d.m – computes the Cohen’s distance between two vectors. It is called by NCP_6_centile_and_effect_sizes_groups.m script.
