@@ -1,0 +1,47 @@
+﻿Name,Type
+5HT1a,Neurotransmitter
+5HT1b,Neurotransmitter
+5HT2a,Neurotransmitter
+5HT4,Neurotransmitter
+5HT6,Neurotransmitter
+5HTT,Neurotransmitter
+A4B2,Neurotransmitter
+CB1,Neurotransmitter
+D1,Neurotransmitter
+D2,Neurotransmitter
+DAT,Neurotransmitter
+GABAa,Neurotransmitter
+H3,Neurotransmitter
+M1,Neurotransmitter
+mGluR5,Neurotransmitter
+MOR,Neurotransmitter
+NET,Neurotransmitter
+NMDA,Neurotransmitter
+VAChT,Neurotransmitter
+Astro,Cell type
+Endo,Cell type
+Micro,Cell type
+Neuro-Ex,Cell type
+Neuro-In,Cell type
+Oligo,Cell type
+OPC,Cell type
+Layer 1,Layer Thickness
+Layer 2,Layer Thickness
+Layer 3,Layer Thickness
+Layer 4,Layer Thickness
+Layer 5,Layer Thickness
+Layer 6,Layer Thickness
+genepc1,Microstructure
+myelinmap,Microstructure
+thickness,Microstructure
+devexp,Expansion
+evoexp,Expansion
+cbf,Metabolism
+cbv,Metabolism
+cmr02,Metabolism
+cmruglu,Metabolism
+scalingnih,Expansion
+scalingpnc,Expansion
+pc1receptor,Microstructure
+synapsedensity,Microstructure
+glycolyticindex,Metabolism
