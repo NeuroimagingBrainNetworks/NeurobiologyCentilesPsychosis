@@ -5,7 +5,7 @@
 
 % Written by Natalia García San Martín (ngarcia1@us.es)
 
-% This file is part of Neurobiological Centiles Mapping toolkit.
+% This file is part of Neurobiology Centiles Psychosis toolkit.
 %
 % Neurobiological Centiles Mapping toolkit is free software: 
 % you can redistribute it and/or modify it under the terms of the 
