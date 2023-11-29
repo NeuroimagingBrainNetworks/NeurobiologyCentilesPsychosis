@@ -36,41 +36,24 @@ NEWDATA <- read.csv("GM_volumes_ALSPAC.csv")
 
 
 # Set the list of names of the regions of interest (columns)
-
-nombres_2<-c('age_months',
-             'age_days',
-             'sex',
-             'Ventricles',
-             'WMV',
-             'sGMV',
-             'GMV',
-             'etiv',
-             'study',
-             'fs_version',
-             'run',
-             'session',
-             'dx',
-             'country',
-             'participant',
-             'CT',
-             'SA')
-
-nombres <- c('bankssts',
+names <- c('bankssts',
              'caudalanteriorcingulate',
              'caudalmiddlefrontal',
              'cuneus',
              'entorhinal',
+             'frontalpole',
              'fusiform',
              'inferiorparietal',
              'inferiortemporal',
+             'insula',
              'isthmuscingulate',
              'lateraloccipital',
              'lateralorbitofrontal',
              'lingual',
              'medialorbitofrontal',
              'middletemporal',
-             'parahippocampal',
              'paracentral',
+             'parahippocampal',
              'parsopercularis',
              'parsorbitalis',
              'parstriangularis',
@@ -85,20 +68,18 @@ nombres <- c('bankssts',
              'superiorparietal',
              'superiortemporal',
              'supramarginal',
-             'frontalpole',
              'temporalpole',
-             'transversetemporal',
-             'insula')
+             'transversetemporal')
 
 d<-c()
 
-for(n in nombres){
+for(n in names){
   both_hemispheres <- data.frame(NEWDATA[paste0('lh_',n,'_volume')],NEWDATA[paste0('rh_',n,'_volume')]) # Merge the hemispheres of each region.
   media <- rowMeans(both_hemispheres) # Take the average of each hemisphere
   d <- cbind(d,media) # Merge the averages of all regions
   
 }
-colnames(d) <- c(nombres) # Assign names to the columns
+colnames(d) <- c(names) # Assign names to the columns
 
 
 METADATA <- read.csv("metadata_rafa.csv") # Open the file containing the age, sex and study information
