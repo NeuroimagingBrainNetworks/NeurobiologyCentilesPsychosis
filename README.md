@@ -130,9 +130,9 @@ res.behav.weight.errorbar.side = 'one';
 
 This section contains the functions that are essential for running the scripts but must not be executed.
 
--	[computeCohen_d.m]() – computes the Cohen’s distance between two vectors. It is called by [NCP_6_centile_and_effect_sizes_groups.m](Code/NCP_06_centile_and_effect_sizes_groups.m) script.
+-	[computeCohen_d.m](Code/computeCohen_d.m) – computes the Cohen’s distance between two vectors. It is called by [NCP_6_centile_and_effect_sizes_groups.m](Code/NCP_06_centile_and_effect_sizes_groups.m) script.
 
--	[mix_dx.m]() – creates randomized groups by mixing patients with different diagnoses or group membership. It is called by [NCP_7_region_permutation_test.m](Code/NCP_07_region_permutation_test.m) and [NCP_8_SSD.m scripts](Code/NCP_08_SSD.m). It was also called by [NCP_9_parfor_groups_CCA.m](Code/NCP_09_parfor_groups_CCA.m) and [NCP_12_parfor_dx_CCA.m](Code/NCP_12_parfor_dx_CCA.m) scripts when doing the leave-one-study-out cross-validation.
+-	[mix_dx.m](Code/mix_dx.m) – creates randomized groups by mixing patients with different diagnoses or group membership. It is called by [NCP_7_region_permutation_test.m](Code/NCP_07_region_permutation_test.m) and [NCP_8_SSD.m scripts](Code/NCP_08_SSD.m). It was also called by [NCP_9_parfor_groups_CCA.m](Code/NCP_09_parfor_groups_CCA.m) and [NCP_12_parfor_dx_CCA.m](Code/NCP_12_parfor_dx_CCA.m) scripts when doing the leave-one-study-out cross-validation.
 
 
 ## **License**
