@@ -1,4 +1,4 @@
-# Neurobiology and Centiles in Psychosi
+# Neurobiology and Centiles in Psychosis
 
 This repository contains code and data created in support of the project García-San-Martín, N.; Bethlehem, R. AI; Mihalik, A. et al. *"Molecular and micro-architectural mapping of gray matter alterations in psychosis"* Mol. Psychiatry (2024). All code was written in Matlab and R. Folders, files, and first steps are described below.
 
